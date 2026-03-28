@@ -143,7 +143,7 @@
 
 
 .m {
-  margin-left: 50px;
+  margin-left: 150px;
   border-radius: 30px;
   width: 23%;
   min-height: fit-content;
@@ -223,20 +223,42 @@
 }
 
 .page3 {
-  margin-left: 50px;
+  margin-left: 150px;
 }
 
-.w1 {
-  font-size: 13px;
+.o {
+  font-size: 15px;
   background-color: #E27500;
   color: white;
-  border-color: #E27500;
   border-radius: 50px;
   width: 10%;
   text-indent: 10px;
   height: 40px;
   display: flex;
   align-items: center;
-}.w1{
+}
+
+.o {
   background-color: #E27500;
+  margin-left: 150px;
+}
+
+.i {
+  margin-left: 10px;
+}
+
+.em{
+  
+  background-color: #ffffff;
+   height: 20px;
+  padding: 10px;
+  align-items: center;
+  font-size: 15px;
+  text-indent: 10px;
+  width: 100px ;
+  border-radius: 40px;
+  border-color: #000000;
+  margin-left: 330px;
+  margin-top: -40px;
+  
 }
