@@ -227,7 +227,7 @@
 }
 
 .o {
-  font-size: 15px;
+  font-size: 13px;
   background-color: #E27500;
   color: white;
   border-radius: 50px;
@@ -253,12 +253,34 @@
    height: 20px;
   padding: 10px;
   align-items: center;
-  font-size: 15px;
+  font-size: 13px;
   text-indent: 10px;
   width: 100px ;
   border-radius: 40px;
   border-color: #000000;
   margin-left: 330px;
-  margin-top: -40px;
+  margin-top: -40px;  
   
 }
+.o0{  background-color: #ffffff;
+   height: 20px;
+  padding: 10px;
+  align-items: center;
+  font-size: 13px;
+  text-indent: 10px;
+  width: 100px ;
+  border-radius: 40px;
+  border-color: #000000;
+  margin-left: 490px;
+  margin-top: -53px;
+  }
+  .tru{font-size: 20px;
+  color: #333333;}
+  .str{ margin-left: 150px;
+  margin-top: -20px;}
+  .tru{margin-left: 150px;
+  margin-top: -30px;}
+  .div{ background-color: whitesmoke;
+   border: 0.2px solid  #333333;padding: 9.863px; align-items: center; width: 20px; border-radius: 10px;}
+   .dic{display: flex;gap: 20px; margin-left: 150px;}
+  
