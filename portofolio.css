@@ -35,7 +35,7 @@
 }
 
 
-.text {
+.text1 {
   transform: rotate(270deg);
   margin-bottom: 35px;
   font-size: 16px;
@@ -133,7 +133,7 @@
 
 .page2 {
   margin-top: 20%;
-  margin-left: 3%;
+  margin-left: 11%;
 }
 
 
@@ -240,47 +240,122 @@
 
 .o {
   background-color: #E27500;
-  margin-left: 150px;
+  margin-left: 150px; 
+  transition: 0.3s;
+ 
 }
 
 .i {
   margin-left: 10px;
 }
 
-.em{
-  
+.em {
+
   background-color: #ffffff;
-   height: 20px;
+  height: 20px;
   padding: 10px;
   align-items: center;
   font-size: 13px;
   text-indent: 10px;
-  width: 100px ;
+  width: 100px;
   border-radius: 40px;
   border-color: #000000;
   margin-left: 330px;
-  margin-top: -40px;  
-  
+  margin-top: -40px;
+
 }
-.o0{  background-color: #ffffff;
-   height: 20px;
+
+.o0 {
+  background-color: #ffffff;
+  height: 20px;
   padding: 10px;
   align-items: center;
   font-size: 13px;
   text-indent: 10px;
-  width: 100px ;
+  width: 100px;
   border-radius: 40px;
   border-color: #000000;
   margin-left: 490px;
   margin-top: -53px;
-  }
-  .tru{font-size: 20px;
-  color: #333333;}
-  .str{ margin-left: 150px;
-  margin-top: -20px;}
-  .tru{margin-left: 150px;
-  margin-top: -30px;}
-  .div{ background-color: whitesmoke;
-   border: 0.2px solid  #333333;padding: 9.863px; align-items: center; width: 20px; border-radius: 10px;}
-   .dic{display: flex;gap: 20px; margin-left: 150px;}
-  
+}
+
+.tru {
+  font-size: 20px;
+  color: #333333;
+}
+
+.str {
+  margin-left: 150px;
+  margin-top: -20px;
+}
+
+.tru {
+  margin-left: 150px;
+  margin-top: -30px;
+}
+
+.div {
+  background-color: whitesmoke;
+  border: 0.2px solid #333333;
+  padding: 9.863px;
+  align-items: center;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.dic {
+  display: flex;
+  gap: 20px;
+  margin-left: 150px;
+}
+.text {
+ 
+  animation: scroll 50000ms linear infinite;
+  color: #6d6d6d;margin-top: 10%;
+}
+
+#mixe{color: black; font-size: 44.8PX ;font-weight: 400;margin-left: 150px;
+margin-top: 20%;}
+
+.word {
+  opacity: 0.2;
+  transition: 0.3s;
+}
+
+
+
+.active {
+  opacity: 1;
+  color: black;
+  font-weight: 500;
+}
+.work{font-size: 44.8px;
+color: #333333;}
+.care{font-size: 16px;
+color: #6D6D6D;}
+.jwc{
+  line-height: 1px;
+  margin-left: 150px;
+  margin-top: 19%;
+}
+.e43 {
+  background-color: #f7f7f7;
+  padding: 50px;
+  border-radius: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.n1 {
+  border-radius: 40px;
+  width: 100%; 
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-left: -5%; 
+  margin-top: 5%;
+}

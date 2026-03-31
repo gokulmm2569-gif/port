@@ -7,11 +7,26 @@
   <title>Document</title>
   <link rel="stylesheet" href="portofolio.css ">
   <style>
+  
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
     @font-face {
       font-family: fah;
       src: url(GloriaHallelujah-Regular.ttf);
     }
-
+.jet{font-family: fah;}
     .qu {
       font-family: fah;
     }
@@ -72,7 +87,9 @@
       font-family: font4;
       src: url(GeneralSans-Medium.ttf);
     }
-
+#mixe {
+      font-family: font4;
+    }
     .me {
       font-family: font4;
     }
@@ -94,18 +111,24 @@
       font-family: font7;
       src: url(GeneralSans-Medium.ttf);
     }
+    .work{ font-family: font7;}
+
     .tru {
       font-family: font7;
     }
+
     .o0 {
       font-family: font7;
     }
+
     .em {
       font-family: font7;
     }
-.o {
+
+    .o {
       font-family: font7;
     }
+
     .w1 {
       font-family: font7;
     }
@@ -113,15 +136,30 @@
     .m0 {
       font-family: font7;
     }
-    .o0:hover{
+
+    .o0:hover {
       background-color: #333333;
       color: white;
     }
-    .o:hover{background-color: #333333;
-   }
-    .w1:hover{background-color: #333333;
-   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); ;left: -100px;right: auto;}
-   .em:hover{background-color: #333333; color: white;}
+
+    .o:hover {
+      background-color: #333333;
+     
+    }
+
+    .w1:hover {
+      background-color: #333333;
+      transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      ;
+      left: -100px;
+      right: auto;
+    }
+ 
+
+    .em:hover {
+      background-color: #333333;
+      color: white;
+    }
   </style>
 </head>
 
@@ -133,13 +171,13 @@
     <div class="first">
       <div class="sidebar">
         <div class="logo">W.</div>
-        <div class="text">Nominee</div>
+        <div class="text1">Nominee</div>
       </div>
       <div class="font">
         <p class="mar">Award Winning Creative Leader</p>
-        <p class="ni">NIKOLA</p>
+        <p class="ni">GOKUL</p>
         <img class="img" src="a1.jpeg" height="500vh" alt="mine">
-        <p class="mre">RADESKI</p>
+        <p class="mre">BOOPATHI</p>
         <p class="de">Designer & Founder</p>
         <p class="ll">Skopje, Macedonia - 19:15 GMT+2</p>
 
@@ -164,24 +202,24 @@
         </div>
 
         <!-- <div class="pages"> -->
-          <div class="m">
-            <p class="qu">Top performing</p>
-            <h1 class="d">01. Web Design</h1>
-            <p class="cl">I design no-code websites that are responsive,<br> mobile-friendly, and SEO-ready. Every site
-              is built <br> usability, speed, and modern design.</p>
-            <p>
-            <ul class="f">
-              <li>Figma</li>
-              <li>Framer</li>
-              <li>Webflow</li>
-              <li>Vercel</li>
-              <li>WordPress</li>
-              <li>Elementor</li>
-              <li>Avada</li>
-              <li>Experienced with AI builders</li>
-            </ul>
-            </p>
-          </div>
+        <div class="m">
+          <p class="qu">Top performing</p>
+          <h1 class="d">01. Web Design</h1>
+          <p class="cl">I design no-code websites that are responsive,<br> mobile-friendly, and SEO-ready. Ev ery site
+            is built <br> usability, speed, and modern design.</p>
+          <p>
+          <ul class="f">
+            <li>Figma</li>
+            <li>Framer</li>
+            <li>Webflow</li>
+            <li>Vercel</li>
+            <li>WordPress</li>
+            <li>Elementor</li>
+            <li>Avada</li>
+            <li>Experienced with AI builders</li>
+          </ul>
+          </p>
+        </div>
 
         <!-- </div> -->
         <div class="m">
@@ -324,26 +362,93 @@
 
         </div>
         <div class="o"><img class="i" src="calendar.png">Schedule a cal </div>
-        <p class="em"> copy email</p> 
+        <p class="em"> copy email</p>
         <p class="o0">Download CV</p>
         <img class="str" src="stars.png">
         <h3 class="tru">Trusted by over 130+ clients</h3>
         <div class="dic">
-        <div class="div">
-        <img class="png1" src="twitter.png"></div>
-       <div class="div"> <img class="png2" src="instagram.png" alt="image"></div>
-     <div class="div">   <img class="png3" src="youtube.png" height="16.5px" width="16.5px"></div>
-        <div class="div"> <img class="png4" src="linkedin-big-logo.png"></div>
-      <div class="div">  <img class="png5" src="telegram.png"> 
-       </div>
-        
-      
+          <div class="div">
+            <img class="png1" src="twitter.png">
+          </div>
+          <div class="div"> <img class="png2" src="instagram.png" alt="image"></div>
+          <div class="div"> <img class="png3" src="youtube.png" height="16.5px" width="16.5px"></div>
+          <div class="div"> <img class="png4" src="linkedin-big-logo.png"></div>
+          <div class="div"> <img class="png5" src="telegram.png">
+          </div>
+
+     
+        </div>
+        <div class="container">
+
+   <div class="text">"13+ Years of Experience&nbsp; &nbsp;/&nbsp; 600+ Successful Projects&nbsp; &nbsp;/&nbsp; 130+ Reviews-Testimonials&nbsp; &nbsp;/&nbsp; &nbsp;100% Customer Satisfaction Rate&nbsp; &nbsp;/&nbsp; 50+ Leading Platform Experiences&nbsp; &nbsp;/&nbsp; &nbsp;9 Certificates&nbsp; &nbsp;/&nbsp; &nbsp;Top Graphic Design Voice Award&nbsp; &nbsp;/"</p>  </div>
+</div>
       </div>
+ <p id="mixe"></p> 
+ <div class="jwc">
+  <p class="jet">/ Portfolio Projects</p>
+  <p class="work">Selected<span style="color: #E27500;"> Work Samples</span></p>
+  <p class="care">A carefully picked showcase of projects that highlight my commitment to this design industry.</p>
+  <div class="grid"><div class="e43">
+  <img  class="n1" src="https://nikolaradeski.com/wp-content/uploads/2025/09/AOJ-Web1-min-600x450.png" height="400px" width="400px" /></div>
+  <div class="e43">
+  <img class="n1" src="https://nikolaradeski.com/wp-content/uploads/2025/09/Screenshot_77.png"height="400px" width="400px" /></div>
+  <div class="e43">
+  <img class="n1" src="https://nikolaradeski.com/wp-content/uploads/2025/09/Screenshot_26-600x339.png"height="400px" width="400px" /></div>
+  <div class="e43">
+  <img class="n1" src="https://nikolaradeski.com/wp-content/uploads/2025/09/Frame-198407883722-min-1-600x350.png"height="400px" width="400px" /></div>
+</div>
+
+ </div>
+   
+
 
     </div>
+  <script>
+const sentence = `I work with founders, product teams, companies and brands based on strategy and innovation. 
+I set one goal, cut noise, and move. 
+When the job is done, the result is live and measured, not just designed.`;
+
+const words = sentence.split(" ");
+const container = document.getElementById("mixe");
+
+let current = 0;
+const step = 3; 
 
 
-  </div>
+words.forEach(word => {
+  const span = document.createElement("span");
+  span.textContent = word + " ";
+  span.classList.add("word");
+  container.appendChild(span);
+});
+
+const spans = document.querySelectorAll(".word");
+
+
+function update() {
+  spans.forEach((span, index) => {
+    if (index < current) {
+      span.classList.add("active");
+    } else {
+      span.classList.remove("active");
+    }
+  });
+}
+
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowDown") {
+    current = Math.min(current + step, spans.length);
+    update();
+  }
+
+  if (e.key === "ArrowUp") {
+    current = Math.max(current - step, 0);
+    update();
+  }
+});
+</script>
+
 </body>
 
 </html>
