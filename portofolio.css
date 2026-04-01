@@ -18,7 +18,7 @@
 
 
   width: 56px;
-  height: 20vh;
+  height: 20vh; 
   background: black;
   color: white;
 
@@ -26,6 +26,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 
@@ -62,6 +63,8 @@
   border-radius: 20px;
   height: 50vh;
   min-width: 180px;
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
 }
 
 .mre {
@@ -103,6 +106,8 @@
   position: fixed;
   bottom: 20px;
   right: 30%;
+  z-index: 1000;
+  
 }
 
 .me {
