@@ -43,6 +43,7 @@ body {
   font-family: 'font1', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 #bgVideo {
@@ -393,7 +394,6 @@ body {
   margin-left: 80px;
   margin-top: 19%;
 }
-.page2
 
 .jet {
   font-family: 'fah';
@@ -654,39 +654,55 @@ body {
   transform: rotate(45deg); 
 }
 
-/* Mobile Responsiveness View */
-@media (max-width: 768px) {
+/* 
+  MOBILE RESPONSIVE VIEW (Width and Height)
+  This block handles the layout for mobile devices, ensuring elements scale 
+  based on both viewport width and height.
+*/
+@media (max-width: 768px), (max-height: 600px) and (max-width: 1024px) {
   .sidebar {
     width: 100%;
-    height: 60px;
+    height: 60px; /* Width-responsive height */
     flex-direction: row;
     padding: 0 20px;
-    position: static;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
   }
   
-  .logo { margin-top: 0; }
-  .text1 { transform: none; margin-bottom: 0; }
+  .logo { margin-top: 0; font-size: 24px; }
+  .text1 { transform: none; margin-bottom: 0; font-size: 14px; }
   
+  .font {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
   .mar, .ni, .mre, .de, .ll, .page2, .page3, .jwc, .skill, .com, .fre, .dic, .tru, .str, .faq-container {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
+    margin: 10px auto !important;
+    width: 90% !important;
     text-align: center !important;
-    width: auto !important;
+    position: static !important;
   }
   
-  .mar { margin-top: 50px; }
-  .ni { margin-top: 20px; font-size: 12vw; }
+  .mar { margin-top: 40px !important; font-size: 14px; }
+  .ni { margin-top: 10px !important; font-size: clamp(32px, 10vw, 60px); }
   
   .img {
-    margin: 30px auto !important;
+    margin: 20px auto !important;
     display: block;
-    height: auto;
-    width: 80%;
+    height: auto !important;
+    max-height: 40vh; /* Height-responsive constraint */
+    width: 70%;
+    min-width: unset;
   }
   
-  .mre { margin-top: 0; font-size: 12vw; text-align: center; }
-  .de { margin-top: 10px; text-align: center; }
-  .ll { margin-top: 30px; text-align: center; }
+  .mre { font-size: clamp(32px, 10vw, 60px); margin-top: 0 !important; }
+  .de { margin-top: 5px !important; font-size: 14px; }
+  .ll { margin-top: 20px !important; font-size: 12px; }
   
   .fix {
     width: 90%;
@@ -696,41 +712,57 @@ body {
     justify-content: center;
     gap: 10px;
     word-spacing: 0;
-    font-size: 12px;
+    font-size: 11px;
     padding: 10px;
+    bottom: 10px;
   }
   
   .abt { display: none; }
+  .clg { width: 18px; height: auto; }
+  .me { height: 35px; font-size: 12px; padding: 0 10px; }
   
   .m {
     width: 90% !important;
-    margin-left: 5% !important;
+    margin: 20px auto !important;
     position: static;
-    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
   
   .grid {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
   
+  .e43 { padding: 20px; border-radius: 20px; }
+  .n1 { border-radius: 15px; }
+
   .skill4 {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    align-items: center;
   }
+  
+  .skill2 { font-size: 28px; text-align: center; }
+  .skill3 { margin: 0 auto !important; width: fit-content; height: auto; padding: 10px 20px; }
   
   .sub {
     flex-direction: column;
     margin-right: 0;
-    gap: 10px;
+    gap: 5px;
+    align-items: center;
   }
   
-  .sub2 { margin-left: 0; }
+  .sub1 { font-size: 18px; text-align: center; }
+  .sub2 { margin-left: 0; font-size: 14px; text-align: center; }
+  .sub3 { text-align: center; font-size: 14px; }
   
   .em, .o0 {
-    margin-left: 20px !important;
-    margin-top: 10px !important;
+    margin: 10px auto !important;
     display: flex;
     width: fit-content;
+    height: auto;
+    padding: 10px 20px;
   }
   
   .o {
@@ -740,8 +772,12 @@ body {
   }
   
   #mixe {
-    margin-left: 20px !important;
-    font-size: 24px;
+    margin: 40px 20px !important;
+    font-size: clamp(18px, 5vw, 24px);
     text-align: left;
+    line-height: 1.4;
   }
+  
+  .w1, .m0, .fre { font-size: clamp(24px, 8vw, 36px); }
+  .e, .dg, .cl, .care { font-size: 14px; line-height: 1.5; }
 }
