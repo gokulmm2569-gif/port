@@ -51,3 +51,17 @@ When the job is done, the result is live and measured, not just designed.`;
             update();
           }
         });
+
+        
+ function toggleFaq(element) {
+       
+        element.classList.toggle('active');
+   
+        
+        const icon = element.querySelector('.icon');
+        if (element.classList.contains('active')) {
+            icon.textContent = '−'; 
+        } else {
+            icon.textContent = '+'; 
+        }
+    }
